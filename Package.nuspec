@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Folke.Build</id>
+    <version>1.0.0</version>
+    <authors>Sidoine De Wispelaere</authors>
+    <owners>Sidoine</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/folkelib/Folke.Build</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Used to build, package, and publish Folke C# projects</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>build</tags>
+  </metadata>
+</package>
