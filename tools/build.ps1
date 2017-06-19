@@ -15,6 +15,10 @@ function publishProject([String]$project,[String]$version) {
 	if ($LastExitCode -ne 0) {
 		throw "Error ($LastExitCode) during dotnet pack"
 	}
+
+	if ($version -match '\d+\.\d+\.\d+\.0') {
+		$version = $version -replace '\.0$', '' 
+	}
 	$file = Get-Item "bin\Release\*.$version.nupkg"
 	nuget push $file.FullName $key -Source https://api.nuget.org/v3/index.json
 	if ($LastExitCode -ne 0) {
