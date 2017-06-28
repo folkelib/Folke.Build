@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Folke.Build</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Sidoine De Wispelaere</authors>
     <owners>Sidoine</owners>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>

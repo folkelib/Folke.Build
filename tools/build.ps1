@@ -11,7 +11,7 @@ function setProjectVersion([String]$project, [String]$version) {
 
 function publishProject([String]$project,[String]$version) {
 	cd ".\src\$project"
-	& dotnet pack -c Release
+	& dotnet pack -c Release --include-symbols --include-source
 	if ($LastExitCode -ne 0) {
 		throw "Error ($LastExitCode) during dotnet pack"
 	}
